@@ -3,7 +3,7 @@
   display: inline-flex;
   width: 100%;
   height: 5.5rem;
-  background-color: $quaternary_color;
+  background-color: $primary_color;
 
   &_profil
   {
@@ -22,7 +22,7 @@
     &_name
     {
       font-family: "Nunito", serif;
-      color: $primary_color;
+      color: $quaternary_color;
       font-size: xx-large;
       font-weight: bold;
       display: inline-block;
