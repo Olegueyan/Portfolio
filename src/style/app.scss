@@ -53,3 +53,18 @@ table {
 
 @import '_font';
 @import '_vars';
+
+/*
+  Components
+*/
+
+@import 'component/navbar';
+
+/*
+  Style
+*/
+
+body
+{
+  background-color: $primary-color;
+}
