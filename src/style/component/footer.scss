@@ -1,0 +1,21 @@
+.Footer
+{
+  display: inline-flex;
+  width: 100%;
+  height: max-content;
+  background-color: $quaternary_color;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  &_copyright
+  {
+    width: 100%;
+    font-family: "Nunito", serif;
+    font-weight: bolder;
+    font-size: small;
+    color: white;
+    text-align: center;
+    margin: 2em;
+  }
+}
