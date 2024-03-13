@@ -7,6 +7,7 @@ function App()
 {
     return (
         <Fragment>
+            <section id="marker" style={{ position: "absolute", visibility: "hidden" }}></section>
             <Routes>
                 <Route path="/" Component={HomePage} />
                 <Route path="/contact" Component={ContactPage} />

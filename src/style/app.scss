@@ -73,4 +73,12 @@ body
   font-family: "Nunito", serif;
   background-color: $tertiary_color;
   line-height: 1.6em;
+  min-height: 100vh;
+}
+
+#marker
+{
+  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
 }
