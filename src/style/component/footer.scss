@@ -1,21 +1,91 @@
 .Footer
 {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: max-content;
   background-color: $primary_color;
   position: fixed;
   bottom: 0;
   left: 0;
+  align-items: center;
 
   &_copyright
   {
     width: 100%;
-    font-family: "Nunito", serif;
     font-weight: bolder;
     font-size: small;
     color: white;
     text-align: center;
-    margin: 2em;
+    margin: 0.75em 1.25em 0 1.25em;
+  }
+
+  &_email
+  {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 1.25em 2em 0.25em 2em;
+    background-color: $secondary_color;
+    width: fit-content;
+    border-radius: 0 10px 0 10px;
+    align-items: center;
+    transition: width 0.3s ease, background-color 0.3s ease;
+
+    &_icon
+    {
+      width: 2.5rem;
+      height: 2.5rem;
+      object-fit: contain;
+      padding: 0.35em;
+      border-right: 1px solid darken($secondary_color, 10%);
+      background-color: darken($secondary_color, 10%);
+      border-radius: inherit;
+    }
+
+    &_button
+    {
+      display: flex;
+      font-size: 16px;
+      padding: 0.35em 0.75em;
+      text-decoration: none;
+      color: $quaternary_color;
+      transition: all 0.3s ease;
+    }
+
+    &:hover
+    {
+      cursor: pointer;
+      background-color: darken($secondary_color, 10%);
+    }
+
+    &:hover &_button
+    {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+
+  &_developped
+  {
+    display: inline-flex;
+    flex-direction: row;
+    width: fit-content;
+    align-items: center;
+
+    &_icon
+    {
+      width: 1.1rem;
+      height: 1.1rem;
+      object-fit: contain;
+    }
+
+    &_text
+    {
+      display: flex;
+      font-size: xx-small;
+      padding: 0.3em 0.7em;
+      text-decoration: none;
+      color: $quaternary_color;
+    }
   }
 }
