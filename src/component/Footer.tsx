@@ -1,10 +1,16 @@
+import { useNavigate } from 'react-router-dom';
+
 function Footer()
 {
+    const navigate = useNavigate();
+
     return (
         <div className="Footer">
             <div className="Footer_email">
                 <img className="Footer_email_icon" src="src/assets/icons/e-mail.png" alt="Email" />
-                <span className="Footer_email_button">Envoyer un mail</span>
+                <span className="Footer_email_button" onClick={() => navigate("/contact")}>
+                    Envoyer un mail
+                </span>
             </div>
 
             <div className="Footer_copyright">
