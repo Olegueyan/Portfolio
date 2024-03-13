@@ -28,6 +28,7 @@
     border-radius: 0 10px 0 10px;
     align-items: center;
     transition: width 0.3s ease, background-color 0.3s ease;
+    user-select: none;
 
     &_icon
     {

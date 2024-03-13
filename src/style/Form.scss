@@ -1,0 +1,85 @@
+.Form
+{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: max-content;
+  background-color: darken($secondary_color, 25%);
+  border-radius: 5px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  margin: 1.25rem auto;
+  transition: border-radius 0.5s ease;
+  padding: 0.75rem;
+  max-width: 80%;
+
+  &_div
+  {
+    margin: 0.2em;
+  }
+
+  &_control
+  {
+    font-size: large;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: darken(white, 25%);
+    padding: 0.45em;
+    border: 1px solid black;
+    transition: border-radius 0.5s ease;
+
+    &:hover, &:focus
+    {
+      border-radius: 5px;
+    }
+  }
+
+  &_none
+  {
+    display: none;
+  }
+
+  &_composed
+  {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 0.75em;
+
+    &_subDiv
+    {
+      width: 100%;
+    }
+  }
+
+  &:hover
+  {
+    border-radius: 15px;
+  }
+
+  &_message
+  {
+    min-height: 5cm;
+    height: 9cm;
+    min-width: 100%;
+    width: 25cm;
+    max-width: 100%;
+  }
+
+  &_button
+  {
+    border-radius: 0 10px 0 10px;
+    background-color: darken(white, 25%);
+    padding: 0.45em;
+    font-size: medium;
+    width: 100%;
+    transition: border-radius 0.5s ease;
+
+    &:hover
+    {
+      cursor: pointer;
+      background-color: darken(white, 45%);
+      border-radius: 10px 0 10px 0;
+    }
+  }
+}
