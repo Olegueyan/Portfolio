@@ -3,26 +3,22 @@ import {useEffect, useState} from "react";
 
 function Footer()
 {
-    const navigate = useNavigate();
-
     const [isAbsolute, setIsAbsolute] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() =>
     {
-        const observer = new MutationObserver(() =>
+        const intervalId = setInterval(() =>
         {
             const marker = document.getElementById("marker");
             const footer = document.getElementById("footer");
             const root = document.getElementById("root");
             if (!marker || !footer || !root) return;
-            const bodyHeight = document.body.clientHeight;
-            if (isAbsolute) setIsAbsolute(root.clientHeight > bodyHeight - footer.clientHeight);
+            if (isAbsolute) setIsAbsolute(root.clientHeight + footer.clientHeight < marker.clientHeight);
             else setIsAbsolute(root.clientHeight < marker.clientHeight);
-        });
-        observer.observe(document.body, { attributes: true, childList: true, subtree: true });
-        const root = document.getElementById("root");
-        if (root) setIsAbsolute(document.body.clientHeight > root.clientHeight);
-        return () => observer.disconnect();
+        }, 1);
+        return () => clearInterval(intervalId);
     }, [isAbsolute]);
 
     return (
