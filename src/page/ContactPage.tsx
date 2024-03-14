@@ -19,29 +19,35 @@ export function ContactPage()
                 <form className="Form" onSubmit={onSubmit}>
                     <div className="Form_composed Form_div">
                         <div className="Form_composed_subDiv">
-                            <label className="Form_none">Firstname</label>
-                            <input className="Form_control" type="text" name="firstname" placeholder="Prénom*" required/>
+                            <label className="Form_label">Prénom*</label>
+                            <span className="Form_bar"></span>
+                            <input className="Form_control" type="text" name="firstname" placeholder="Prénom" required/>
                         </div>
                         <div className="Form_composed_subDiv">
-                            <label className="Form_none">Prénom:</label>
-                            <input className="Form_control" type="text" name="lastname" placeholder="Nom*" required />
+                            <label className="Form_label">Nom*</label>
+                            <span className="Form_bar"></span>
+                            <input className="Form_control" type="text" name="lastname" placeholder="Nom" required />
                         </div>
                     </div>
                     <div className="Form_div">
-                        <label className="Form_none">Email:</label>
-                        <input className="Form_control" type="email" name="email" placeholder="Mail*" required />
+                        <label className="Form_label">Mail*</label>
+                        <span className="Form_bar"></span>
+                        <input className="Form_control" type="email" name="email" placeholder="Mail" required />
                     </div>
                     <div className="Form_div">
-                        <label className="Form_none">Téléphone:</label>
+                        <label className="Form_label">Téléphone*</label>
+                        <span className="Form_bar"></span>
                         <input className="Form_control" type="tel" name="phone" placeholder="Téléphone"/>
                     </div>
                     <div className="Form_div">
-                        <label className="Form_none">Objet:</label>
-                        <input className="Form_control" type="text" name="object" placeholder="Objet*" required />
+                        <label className="Form_label">Objet*</label>
+                        <span className="Form_bar"></span>
+                        <input className="Form_control" type="text" name="object" placeholder="Objet" required />
                     </div>
                     <div className="Form_div">
-                        <label className="Form_none">Message:</label>
-                        <textarea className="Form_control Form_message" name="message" placeholder="Message*" required />
+                        <label className="Form_label">Message*</label>
+                        <span className="Form_bar"></span>
+                        <textarea className="Form_control Form_message" name="message" placeholder="Message" required />
                     </div>
                     <div className="Form_composed Form_div">
                         <div className="Form_composed_subDiv">

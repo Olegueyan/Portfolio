@@ -35,9 +35,21 @@
     }
   }
 
-  &_none
+  &_label
   {
-    display: none;
+    position: relative;
+    font-size: large;
+    color: $quaternary_color;
+  }
+
+  &_bar
+  {
+    display: flex;
+    height: 2px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 0.2em;
+    margin-bottom: 0.75em;
   }
 
   &_composed
@@ -69,7 +81,7 @@
   &_button
   {
     border-radius: 0 10px 0 10px;
-    background-color: darken(white, 25%);
+    background-color: darken(white, 40%);
     padding: 0.45em;
     font-size: medium;
     width: 100%;
@@ -78,7 +90,7 @@
     &:hover
     {
       cursor: pointer;
-      background-color: darken(white, 45%);
+      background-color: darken(white, 60%);
       border-radius: 10px 0 10px 0;
     }
   }
