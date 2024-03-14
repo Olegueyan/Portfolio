@@ -25,11 +25,14 @@
     width: 100%;
     padding: 0.25rem;
     gap: 0.75em;
+    transition: all 0.3s ease;
 
     &:hover
     {
       cursor: pointer;
       background-color: darken($quaternary_color, 25%);
+      letter-spacing: 0.1em;
+      transform: scaleX(110%) scaleY(110%);
     }
 
     &_icon

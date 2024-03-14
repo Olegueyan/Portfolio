@@ -17,6 +17,14 @@
     &_image
     {
       border-radius: 10px;
+      transition: all 0.25s ease;
+
+      &:hover
+      {
+        border-radius: 20px;
+        transform: scaleX(95%) scaleY(95%);
+        cursor: pointer;
+      }
     }
 
     &_name
@@ -28,6 +36,12 @@
       display: inline-block;
       align-self: flex-end;
       padding-bottom: 0.15em;
+      transition: letter-spacing 0.25s ease;
+
+      &:hover
+      {
+        letter-spacing: 0.2em;
+      }
     }
   }
 
