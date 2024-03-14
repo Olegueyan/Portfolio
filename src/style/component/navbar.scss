@@ -51,10 +51,12 @@
       height: 3.8rem;
       width: 3.8rem;
       border-radius: 10px;
+      transition: transform 0.35s ease;
 
       &:hover
       {
         cursor: pointer;
+        transform: scaleX(75%) scaleY(75%);
       }
     }
 
