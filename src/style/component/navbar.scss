@@ -1,9 +1,16 @@
 .Navbar
 {
-  display: inline-flex;
-  width: 100%;
-  height: 5.5rem;
-  background-color: $primary_color;
+  display: flex;
+  padding: 0.2em;
+
+  &_main
+  {
+    display: inline-flex;
+    height: 5.5rem;
+    background-color: $primary_color;
+    border-radius: 10px;
+    width: 100%;
+  }
 
   &_profil
   {
