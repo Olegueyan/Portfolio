@@ -19,7 +19,7 @@ function Navbar()
         <div className="Navbar">
             <div className="Navbar_main">
                 <div className="Navbar_main_profil">
-                    <img className="Navbar_main_profil_image" src="src/assets/images/profil.png" alt="Gaëtan Rousselin" />
+                    <img className="Navbar_main_profil_image" src="src/assets/images/profile.png" alt="Gaëtan Rousselin" />
                     <span className="Navbar_main_profil_name">Gaëtan Rousselin</span>
                 </div>
                 <div className="Navbar_main_socialNetworks">
