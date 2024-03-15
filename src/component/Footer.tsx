@@ -23,9 +23,9 @@ function Footer()
 
     return (
         <footer id="footer" style={{ position: isAbsolute ? "absolute" : "relative" }} className="Footer">
-            <div className="Footer_email">
+            <div className="Footer_email" onClick={() => navigate("/contact")}>
                 <img className="Footer_email_icon" src="src/assets/icons/e-mail.png" alt="Email" />
-                <span className="Footer_email_button" onClick={() => navigate("/contact")}>
+                <span className="Footer_email_button">
                     Envoyer un mail
                 </span>
             </div>
