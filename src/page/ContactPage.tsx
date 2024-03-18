@@ -1,4 +1,4 @@
-import {Fragment} from "react";
+import { Fragment, useEffect } from "react";
 import Navbar from "../component/Navbar.tsx";
 import Footer from "../component/Footer.tsx";
 import {useNavigate} from "react-router-dom";
@@ -6,6 +6,10 @@ import {useNavigate} from "react-router-dom";
 export function ContactPage()
 {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, []);
 
     const onSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
