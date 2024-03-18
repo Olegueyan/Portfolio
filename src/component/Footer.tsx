@@ -3,7 +3,7 @@ import {useEffect, useState} from "react";
 
 function Footer()
 {
-    const [isAbsolute, setIsAbsolute] = useState(false);
+    const [isAbsolute, setIsAbsolute] = useState(true);
 
     const navigate = useNavigate();
 
@@ -24,7 +24,7 @@ function Footer()
     return (
         <footer id="footer" style={{ position: isAbsolute ? "absolute" : "relative" }} className="Footer">
             <div className="Footer_email" onClick={() => navigate("/contact")}>
-                <img className="Footer_email_icon" src="src/assets/icons/e-mail.png" alt="Email" />
+                <img className="Footer_email_icon" src="/src/assets/images/icon/e-mail.png" alt="Email" />
                 <span className="Footer_email_button">
                     Envoyer un mail
                 </span>
@@ -35,7 +35,7 @@ function Footer()
             </div>
 
             <div className="Footer_developped">
-                <img className="Footer_developped_icon" src="src/assets/icons/reactjs.png" alt="ReactJS" />
+                <img className="Footer_developped_icon" src="/src/assets/images/lang/reactjs.png" alt="ReactJS" />
                 <span className="Footer_developped_text">Developed in ReactJS</span>
             </div>
         </footer>
