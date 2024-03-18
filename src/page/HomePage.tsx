@@ -3,6 +3,7 @@ import Navbar from "../component/Navbar.tsx";
 import Menubar from "../component/partial/Menubar.tsx";
 import Footer from "../component/Footer.tsx";
 import Skills from "../component/content/Skills.tsx";
+import Project from "../component/content/Project.tsx";
 
 export function HomePage()
 {
@@ -43,6 +44,12 @@ export function HomePage()
 
             <div className="mt-3 mt-2 mr-5 ml-5">
                 <Menubar props={MenuProps} />
+
+                { activeView === "project" &&
+                    <div className="animate">
+                        <Project />
+                    </div>
+                }
 
                 { activeView === "skills" &&
                   <div className="animate">
