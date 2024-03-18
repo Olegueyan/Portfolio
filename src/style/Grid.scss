@@ -1,0 +1,9 @@
+.Grid
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, auto));
+  grid-template-rows: repeat(auto-fill, auto);
+  row-gap: 15px;
+  column-gap: 15px;
+  justify-items: center;
+}
