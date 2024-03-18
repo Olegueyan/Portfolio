@@ -6,6 +6,7 @@ import Skills from "../component/content/Skills.tsx";
 import Project from "../component/content/Project.tsx";
 import Profile from "../component/content/Profile.tsx";
 import Career from "../component/content/Career.tsx";
+import Formations from "../component/content/Formations.tsx";
 
 export function HomePage()
 {
@@ -56,6 +57,12 @@ export function HomePage()
                 { activeView === "project" &&
                     <div className="animate">
                         <Project />
+                    </div>
+                }
+
+                { activeView === "formations" &&
+                    <div className="animate">
+                        <Formations />
                     </div>
                 }
 
