@@ -4,6 +4,7 @@ import Menubar from "../component/partial/Menubar.tsx";
 import Footer from "../component/Footer.tsx";
 import Skills from "../component/content/Skills.tsx";
 import Project from "../component/content/Project.tsx";
+import Profile from "../component/content/Profile.tsx";
 
 export function HomePage()
 {
@@ -44,6 +45,12 @@ export function HomePage()
 
             <div className="mt-3 mt-2 mr-5 ml-5">
                 <Menubar props={MenuProps} />
+
+                { activeView === "profile" &&
+                    <div className="animate">
+                        <Profile />
+                    </div>
+                }
 
                 { activeView === "project" &&
                     <div className="animate">
