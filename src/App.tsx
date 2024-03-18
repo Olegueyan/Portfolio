@@ -2,6 +2,7 @@ import {Route, Routes} from "react-router-dom";
 import {HomePage} from "./page/HomePage.tsx";
 import {Fragment} from "react";
 import {ContactPage} from "./page/ContactPage.tsx";
+import { MenagelecPage } from "./page/project/MenagelecPage.tsx";
 
 function App()
 {
@@ -11,6 +12,7 @@ function App()
             <Routes>
                 <Route path="/" Component={HomePage} />
                 <Route path="/contact" Component={ContactPage} />
+                <Route path="/menagelec" Component={MenagelecPage} />
             </Routes>
         </Fragment>
     )
