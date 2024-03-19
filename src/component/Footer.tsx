@@ -1,6 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import {useEffect, useState} from "react";
 
+/* Assets imports */
+
+import * as assets from "../assets/import.ts";
+
 function Footer()
 {
     const [isAbsolute, setIsAbsolute] = useState(true);
@@ -24,7 +28,7 @@ function Footer()
     return (
         <footer id="footer" style={{ position: isAbsolute ? "absolute" : "relative" }} className="Footer">
             <div className="Footer_email" onClick={() => navigate("/contact")}>
-                <img className="Footer_email_icon" src="/src/assets/images/icon/e-mail.png" alt="Email" />
+                <img className="Footer_email_icon" src={assets.imgEmail} alt="Email" />
                 <span className="Footer_email_button">
                     Envoyer un mail
                 </span>
@@ -35,7 +39,7 @@ function Footer()
             </div>
 
             <div className="Footer_developped">
-                <img className="Footer_developped_icon" src="/src/assets/images/lang/reactjs.png" alt="ReactJS" />
+                <img className="Footer_developped_icon" src={assets.imgReactJS} alt="ReactJS" />
                 <span className="Footer_developped_text">Developed in ReactJS</span>
             </div>
         </footer>

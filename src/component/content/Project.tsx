@@ -1,13 +1,17 @@
 import { Fragment } from "react";
 import { useNavigate } from "react-router-dom";
 
+/* Assets imports */
+
+import * as assets from "../../assets/import.ts";
+
 function Profile()
 {
   const navigate = useNavigate();
 
   return (
     <Fragment>
-      <span className="Title -big -bold">Projets réalisés</span>
+      <span className="Title -big -bold m-3">Projets réalisés</span>
 
       <div className="Project mt-3 mb-3 mr-5 ml-5">
 
@@ -15,7 +19,7 @@ function Profile()
         <div className="Project_card">
           <div className="Project_card_header">
             <img className="Project_card_header_image"
-                 src="/src/assets/images/project/menagelec/menagelec.png" alt="Menagelec"/>
+                 src={assets.imgMenagelec} alt="Menagelec"/>
             <div className="Project_card_header_head">
               <span className="Project_card_header_head_title">Menagelec</span>
               <span className="Project_card_header_head_specs">WinForms - C#</span>
@@ -35,9 +39,9 @@ function Profile()
 
           <div className="Project_card_footer">
             <a href="/external/Menagelec.zip">
-              <img className="Project_card_footer_button" src="/src/assets/images/icon/download.png" alt="Download"/>
+              <img className="Project_card_footer_button" src={assets.imgDownload} alt="Download"/>
             </a>
-            <img className="Project_card_footer_button" src="/src/assets/images/icon/loup.png" alt="Loup"
+            <img className="Project_card_footer_button" src={assets.imgLoup} alt="Loup"
                  onClick={() => navigate("/menagelec")}
             />
           </div>
@@ -48,7 +52,7 @@ function Profile()
         <div className="Project_card">
           <div className="Project_card_header">
             <img className="Project_card_header_image"
-                 src="/src/assets/images/project/monstroclasse.gif" alt="Telem"/>
+                 src={assets.imgMonstroclasse} alt="Telem"/>
             <div className="Project_card_header_head">
               <span className="Project_card_header_head_title">Monstroclasse</span>
               <span className="Project_card_header_head_specs">JavaFX - Java</span>
@@ -65,9 +69,9 @@ function Profile()
 
           <div className="Project_card_footer">
             <a href="/external/monstroclasse-release-1.0.zip">
-              <img className="Project_card_footer_button" src="/src/assets/images/icon/download.png" alt="Download"/>
+              <img className="Project_card_footer_button" src={assets.imgDownload} alt="Download"/>
             </a>
-            <img className="Project_card_footer_button" src="/src/assets/images/icon/loup.png" alt="Loup"/>
+            <img className="Project_card_footer_button" src={assets.imgLoup} alt="Loup"/>
           </div>
         </div>
         {/* END */}
@@ -76,7 +80,7 @@ function Profile()
         <div className="Project_card">
           <div className="Project_card_header">
             <img className="Project_card_header_image"
-                 src="/src/assets/images/project/telem.png" alt="Telem"/>
+                 src={assets.imgTelem} alt="Telem"/>
             <div className="Project_card_header_head">
               <span className="Project_card_header_head_title">Telem</span>
               <span className="Project_card_header_head_specs">Symfony - PHP</span>
@@ -93,8 +97,8 @@ function Profile()
           </div>
 
           <div className="Project_card_footer">
-            <img className="Project_card_footer_button -disabled" src="/src/assets/images/icon/download.png" alt="Download"/>
-            <img className="Project_card_footer_button" src="/src/assets/images/icon/loup.png" alt="Loup"/>
+            <img className="Project_card_footer_button -disabled" src={assets.imgDownload} alt="Download"/>
+            <img className="Project_card_footer_button" src={assets.imgLoup} alt="Loup"/>
           </div>
         </div>
         {/* END */}

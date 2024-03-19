@@ -4,7 +4,7 @@ function Profile()
 {
     return (
         <Fragment>
-            <span className="Title -big -bold">Profil</span>
+            <span className="Title -big -bold m-3">Profil</span>
         </Fragment>
     )
 }

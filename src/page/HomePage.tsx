@@ -8,6 +8,10 @@ import Profile from "../component/content/Profile.tsx";
 import Career from "../component/content/Career.tsx";
 import Formations from "../component/content/Formations.tsx";
 
+/* Assets imports */
+
+import * as assets from "../assets/import.ts";
+
 export function HomePage()
 {
     const [activeView, setActiveView] = useState("profile");
@@ -16,28 +20,28 @@ export function HomePage()
         [
             {
                 value: "Profil",
-                icon: "/src/assets/images/icon/profile.png",
+                icon: assets.imgProfile,
                 action: () => {setActiveView("profile")}
             },
             {
                 value: "Projets",
-                icon: "/src/assets/images/icon/project.png",
+                icon: assets.imgProject,
                 action: () => {setActiveView("project")}
             },
             {
                 value: "Formations",
-                icon: "/src/assets/images/icon/formations.png",
+                icon: assets.imgFormations,
                 action: () => {setActiveView("formations")}
             },
             {
                 value: "Compétences",
-                icon: "/src/assets/images/icon/skills.png",
+                icon: assets.imgSkills,
                 action: () => {setActiveView("skills")}
             },
             {
-              value: "Parcours",
-              icon: "/src/assets/images/icon/career.png",
-              action: () => {setActiveView("career")}
+                value: "Parcours",
+                icon: assets.imgCareer,
+                action: () => {setActiveView("career")}
             }
         ]
 
@@ -67,9 +71,9 @@ export function HomePage()
                 }
 
                 { activeView === "skills" &&
-                  <div className="animate">
-                    <Skills />
-                  </div>
+                    <div className="animate">
+                        <Skills />
+                    </div>
                 }
 
                 { activeView === "career" &&

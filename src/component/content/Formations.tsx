@@ -4,7 +4,7 @@ function Formations()
 {
     return (
         <Fragment>
-            <span className="Title -big -bold">Formations effectuées</span>
+            <span className="Title -big -bold m-3">Formations effectuées</span>
         </Fragment>
     )
 }

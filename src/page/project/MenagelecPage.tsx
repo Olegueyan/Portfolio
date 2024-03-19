@@ -4,14 +4,18 @@ import Footer from "../../component/Footer.tsx";
 import Slider from "../../component/partial/Slider.tsx";
 import BubbleCard from "../../component/partial/BubbleCard.tsx";
 
+/* Assets imports */
+
+import * as assets from "../../assets/import.ts";
+
 export function MenagelecPage()
 {
     const images = [
-        "/src/assets/images/project/menagelec/slide_menagelec1.png",
-        "/src/assets/images/project/menagelec/slide_menagelec2.png",
-        "/src/assets/images/project/menagelec/slide_menagelec3.png",
-        "/src/assets/images/project/menagelec/slide_menagelec4.png",
-        "/src/assets/images/project/menagelec/slide_menagelec5.png",
+        assets.imgMenagelecSlideOne,
+        assets.imgMenagelecSlideTwo,
+        assets.imgMenagelecSlideThree,
+        assets.imgMenagelecSlideFour,
+        assets.imgMenagelecSlideFive,
     ]
 
     return (
@@ -19,16 +23,16 @@ export function MenagelecPage()
             <Navbar />
 
             <button className="animate HomeButton" onClick={() => window.location.href = "/"}>
-                <img className="HomeButton_icon" src="/src/assets/images/icon/home.png" alt="Home"/>
+                <img className="HomeButton_icon" src={assets.imgHome} alt="Home"/>
                 Home
             </button>
 
             <main className="animate">
-                <span className="Title -big -bold">Aperçu du projet</span>
+                <span className="Title -big -bold m-3">Aperçu du projet</span>
 
                 <Slider images={images} />
 
-                <span className="Title -medium -bold">Description</span>
+                <span className="Title -medium -bold m-2">Description</span>
 
                 <p className="Text -description p-5">
                     Menagelec est une application client lourd en C# réalisé avec WinForms.
@@ -39,11 +43,11 @@ export function MenagelecPage()
                     de listes de colisage au format PDF.
                 </p>
 
-                <span className="Title -medium -bold">Conception</span>
+                <span className="Title -medium -bold m-2">Conception</span>
 
                 <div className="Grid m-5">
-                    <BubbleCard icon="/src/assets/images/lang/csharp.png" alt="C#" name="C#"/>
-                    <BubbleCard icon="/src/assets/images/lib/winforms.png" alt="WinForms" name="WinForms"/>
+                    <BubbleCard icon={assets.imgCSharp} name="C#"/>
+                    <BubbleCard icon={assets.imgWinForms} name="WinForms"/>
                 </div>
 
                 <a href="/external/Menagelec.zip">Télécharger</a>

@@ -2,7 +2,6 @@ interface BubbleCardProps
 {
     url?: string,
     icon: string,
-    alt: string,
     name: string
 }
 
@@ -16,7 +15,7 @@ const BubbleCard = (props: BubbleCardProps) =>
 
     return (
         <div className="BubbleCard" onClick={() => {if (props.url) redirection(props.url)}}>
-            <img className="BubbleCard_icon" src={props.icon} alt={props.alt}/>
+            <img className="BubbleCard_icon" src={props.icon} alt={props.name}/>
             <span className="BubbleCard_name">{props.name}</span>
         </div>
     );

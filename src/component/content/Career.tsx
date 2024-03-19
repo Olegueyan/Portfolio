@@ -4,7 +4,7 @@ function Career()
 {
     return (
         <Fragment>
-            <span className="Title -big -bold">Parcours professionnel</span>
+            <span className="Title -big -bold m-3">Parcours professionnel</span>
         </Fragment>
     )
 }
