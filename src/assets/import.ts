@@ -9,6 +9,7 @@ import imgLoup from "./images/icon/loup.png";
 import imgProfile from "./images/icon/profile.png";
 import imgProject from "./images/icon/project.png";
 import imgSkills from "./images/icon/skills.png";
+import imgHighschool from "./images/icon/highschool.png";
 
 export
 {
@@ -20,7 +21,8 @@ export
   imgLoup,
   imgProfile,
   imgProject,
-  imgSkills
+  imgSkills,
+  imgHighschool
 }
 
 // --------------------------------- //
