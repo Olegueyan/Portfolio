@@ -1,0 +1,165 @@
+.ColumnCard
+{
+  display: flex;
+  flex-direction: column;
+  background-color: lighten($secondary_color, 30%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.35s ease;
+  border: 1px solid lighten($secondary_color, 20%);
+  padding: 1em;
+  box-sizing: border-box;
+
+  &:hover
+  {
+    border-radius: 10px;
+    background-color: lighten($secondary_color, 20%);
+    transform: scaleX(99%) scaleY(99%);
+  }
+
+  &_header
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    &_title
+    {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 0.25em;
+    }
+
+    &_icon
+    {
+      width: 6.5rem;
+      height: 6.5rem;
+    }
+  }
+}
+
+.RowCard
+{
+  display: inline-flex;
+  flex-direction: row;
+  background-color: lighten($secondary_color, 30%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  transition: all 0.35s ease;
+  border: 1px solid lighten($secondary_color, 20%);
+  box-sizing: border-box;
+
+  &_header
+  {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+
+    @media screen and (max-width: 660px)
+    {
+      flex-direction: column;
+    }
+
+    &_image
+    {
+      width: 7.5rem;
+      height: 7.5rem;
+      margin: 1em;
+      transition: border-radius 0.25s ease;
+
+      &:hover
+      {
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    }
+
+    &_head
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      width: 8.5rem;
+
+      &_title
+      {
+        font-size: x-large;
+        font-weight: bold;
+      }
+
+      &_specs
+      {
+        font-size: medium;
+        font-style: italic;
+      }
+    }
+  }
+
+  &_body
+  {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 0.25rem 1.5rem;
+
+    &_description
+    {
+      text-align: center;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &_footer
+  {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 0.75em;
+    margin: 1em;
+
+    &_button
+    {
+      width: 5em;
+      height: 5em;
+      transition: all 0.65s ease;
+
+      &:hover
+      {
+        cursor: pointer;
+        transform: scaleX(70%) scaleY(70%);
+        rotate: 25deg;
+      }
+
+      &.-disabled
+      {
+        cursor: default;
+        transform: scaleX(100%) scaleY(100%);
+        rotate: 0deg;
+        opacity: 0.2;
+      }
+    }
+  }
+
+  &:hover
+  {
+    border-radius: 20px;
+    background-color: lighten($secondary_color, 20%);
+    transform: scaleX(99%) scaleY(99%);
+  }
+
+  @media screen and (max-width: 1096px)
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+  }
+}
