@@ -3,6 +3,26 @@
   animation-duration: 0.75s;
   animation-name: animate-fade;
   animation-fill-mode: backwards;
+
+  &.-DLow
+  {
+    animation-delay: 0.1s;
+  }
+
+  &.-DMedium
+  {
+    animation-delay: 0.2s;
+  }
+
+  &.-DHigh
+  {
+    animation-delay: 0.3s;
+  }
+
+  &.-DHigher
+  {
+    animation-delay: 0.4s;
+  }
 }
 
 @keyframes animate-fade
