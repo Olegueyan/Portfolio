@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-
 function Career()
 {
     return (
-        <Fragment>
-            <span className="Title -big -bold m-3">Parcours professionnel</span>
-        </Fragment>
+      <div className="Container -mb-3 -mt-3">
+        <span className="Title -big -bold">
+          Parcours professionnel
+        </span>
+      </div>
     )
 }
 

@@ -49,7 +49,7 @@ export function HomePage()
         <Fragment>
             <Navbar />
 
-            <div className="mt-3 mt-2 mr-5 ml-5">
+            <div className="Container -mb-3 -mt-3 -ml-5 -mr-5">
                 <Menubar props={MenuProps} />
 
                 { activeView === "profile" &&

@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import BubbleCard from "../partial/BubbleCard.tsx";
 
 /* Assets imports */
@@ -8,15 +7,17 @@ import * as assets from "../../assets/import.ts";
 function Skills()
 {
   return (
-    <Fragment>
-      <span className="Title -big -bold m-3">Mes compétences</span>
+    <div className="Container -mb-3 -mt-3 -gap-5">
+      <span className="Title -big -bold m-3">
+        Mes compétences
+      </span>
 
-      <div>
+      <div className="animate -DLow Container -gap-3">
         <span className="Title -medium -bold -left mb-4">
           Language de programmation
         </span>
 
-        <div className="Grid mb-4">
+        <div className="Grid">
 
           {/* Java */}
           <BubbleCard url="https://www.java.com/fr/"
@@ -81,12 +82,12 @@ function Skills()
         </div>
       </div>
 
-      <div>
+      <div className="animate -DMedium Container -gap-3">
         <span className="Title -medium -bold -left mb-4">
           Framework
         </span>
 
-        <div className="Grid mb-4">
+        <div className="Grid">
 
           {/* Symfony */}
           <BubbleCard url="https://symfony.com/"
@@ -109,12 +110,12 @@ function Skills()
         </div>
       </div>
 
-      <div>
+      <div className="animate -DHigh Container -gap-3">
         <span className="Title -medium -bold -left mb-4">
           Logiciels
         </span>
 
-        <div className="Grid mb-4">
+        <div className="Grid">
 
           {/* IDEA */}
           <BubbleCard url="https://www.jetbrains.com/fr-fr/idea/"
@@ -161,12 +162,12 @@ function Skills()
         </div>
       </div>
 
-      <div>
+      <div className="animate -DHigher Container -gap-3">
         <span className="Title -medium -bold -left mb-4">
           Services - Outils
         </span>
 
-        <div className="Grid mb-4">
+        <div className="Grid">
 
           {/* MySQL */}
           <BubbleCard url="https://www.mysql.com/fr/"
@@ -200,7 +201,7 @@ function Skills()
 
         </div>
       </div>
-    </Fragment>
+    </div>
   )
 }
 

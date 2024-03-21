@@ -1,11 +1,11 @@
-import { Fragment } from "react";
-
 function Formations()
 {
     return (
-        <Fragment>
-            <span className="Title -big -bold m-3">Formations effectuées</span>
-        </Fragment>
+      <div className="Container -mb-3 -mt-3">
+        <span className="Title -big -bold">
+          Formations effectuées
+        </span>
+      </div>
     )
 }
 
